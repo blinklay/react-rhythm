@@ -1,0 +1,21 @@
+.check {
+  margin-top: 120px;
+}
+
+.header {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--color-text-header);
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.header span {
+  color: var(--color-accent);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}

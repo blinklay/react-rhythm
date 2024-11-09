@@ -1,4 +1,5 @@
 import Button from "../../components/Button/Button";
+import CheckSection from "../../components/CheckSection/CheckSection";
 import styled from "./Home.module.css";
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
           <img src="./icons/apple-logo.svg" alt="Apple Icon" />
         </div>
       </div>
+
+      <CheckSection />
     </div>
   );
 }
