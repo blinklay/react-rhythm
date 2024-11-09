@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "./SmallCollectionList.module.css";
 import List from "../List/List";
-export default function SmallCollectionList({ text, to }) {
+import Loader from "../../Loader/Loader";
+export default function SmallCollectionList({ text, to, products, isLoading }) {
   return (
     <div className={styled.collection}>
       <div className={styled.wrapper}>
@@ -11,7 +12,8 @@ export default function SmallCollectionList({ text, to }) {
         </Link>
       </div>
 
-      <List />
+      {isLoading && <Loader />}
+      {!isLoading && <List products={products} />}
     </div>
   );
 }

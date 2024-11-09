@@ -1,11 +1,11 @@
 import styled from "./List.module.css";
 import ListItem from "../ListItem/ListItem";
-export default function List() {
+export default function List({ products }) {
   return (
     <ul className={styled.list}>
-      <ListItem />
-      <ListItem />
-      <ListItem />
+      {products.map((item) => (
+        <ListItem key={item.id} {...item} />
+      ))}
     </ul>
   );
 }

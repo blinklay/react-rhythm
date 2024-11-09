@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "The Essential Les Paul",
+      "price": 1299,
+      "img": "https://i.yapx.ru/YJXw2.jpg",
+      "category": "collections"
+    },
+    {
+      "id": 1,
+      "name": "J-45 Standard",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyE.jpg",
+      "category": "collections"
+    },
+    {
+      "id": 2,
+      "name": "Hummingbird Standard",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyD.jpg",
+      "category": "collections"
+    },
+    {
+      "id": 3,
+      "name": "Active Precision Bass® PH V",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyJ.jpg",
+      "category": "basses"
+    },
+    {
+      "id": 4,
+      "name": "Redondo Special",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyH.jpg",
+      "category": "acoustic"
+    },
+    {
+      "id": 5,
+      "name": "Professional II Stratocaster®",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyG.jpg",
+      "category": "electric"
+    }
+  ],
+  "newOnBoard": [
+    {
+      "id": 0,
+      "name": "The Essential Les Paul",
+      "price": 1299,
+      "img": "https://i.yapx.ru/YJXw2.jpg",
+      "category": "collections"
+    },
+    {
+      "id": 1,
+      "name": "J-45 Standard",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyE.jpg",
+      "category": "collections"
+    },
+    {
+      "id": 2,
+      "name": "Hummingbird Standard",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyD.jpg",
+      "category": "collections"
+    }
+  ],
+  "topSelling": [
+    {
+      "id": 3,
+      "name": "Active Precision Bass® PH V",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyJ.jpg",
+      "category": "basses"
+    },
+    {
+      "id": 4,
+      "name": "Redondo Special",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyH.jpg",
+      "category": "acoustic"
+    },
+    {
+      "id": 5,
+      "name": "Professional II Stratocaster®",
+      "price": 1699,
+      "img": "https://i.yapx.ru/YJXyG.jpg",
+      "category": "electric"
+    }
+  ]
+}
