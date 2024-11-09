@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  gap: 135px;
+  align-items: center;
+  padding-top: 62px;
+  animation: load 0.8s ease-in;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(-60%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

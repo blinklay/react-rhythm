@@ -1,0 +1,51 @@
+:root {
+  --color-accent: #FF6428;
+  --color-text-opacity: rgba(18, 18, 18, 0.4);
+  --color-text: #666666;
+  --color-text-header: #000;
+  --color-background: #fff;
+
+  --font-weight-header: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: auto;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.item {
+  color: var(--color-text-opacity);
+  text-transform: capitalize;
+}
