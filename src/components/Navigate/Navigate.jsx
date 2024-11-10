@@ -5,7 +5,7 @@ export default function Navigate() {
     <nav className={styled.navigate}>
       <ul className={styled.list}>
         <li className={styled.item}>
-          <Link to={"/store"}>Store</Link>
+          <Link to={"/catalog"}>Store</Link>
         </li>
         <li className={styled.item}>
           <Link to={"/store"}>Collections</Link>

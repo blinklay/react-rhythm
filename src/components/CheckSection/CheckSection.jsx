@@ -1,42 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import SmallCollectionList from "../SmallCollectionList/SmallCollectionList";
 import styled from "./CheckSection.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setCatigoriesNewOnBoard,
+  setCatigoriesTopSellers,
+} from "../../actions/setCatigories";
 export default function CheckSection() {
-  const [newOnBoard, setNewOnBoard] = useState([]);
-  const [topSelling, setTopSelling] = useState([]);
-  const [isLoading, setIsLoading] = useState({
-    newOnBoard: false,
-    topSelling: false,
-  });
+  const dispatch = useDispatch();
+
+  const newOnBoard = useSelector((state) => state.catigories.newOnBoard);
+  const topSelling = useSelector((state) => state.catigories.topSellers);
+
+  const isLoading = {
+    newOnBoard: newOnBoard.length === 0,
+    topSelling: topSelling.length === 0,
+  };
 
   useEffect(() => {
-    setIsLoading({
-      topSelling: true,
-      newOnBoard: true,
-    });
-    fetch("http://localhost:3000/newOnBoard")
-      .then((res) => res.json())
-      .then((data) => {
-        setNewOnBoard(data);
-      })
-      .finally(() => {
-        setIsLoading({
-          ...isLoading,
-          newOnBoard: false,
-        });
-      });
-
-    fetch("http://localhost:3000/topSelling")
-      .then((res) => res.json())
-      .then((data) => {
-        setTopSelling(data);
-      })
-      .finally(() => {
-        setIsLoading({
-          ...isLoading,
-          topSelling: false,
-        });
-      });
+    dispatch(setCatigoriesNewOnBoard());
+    dispatch(setCatigoriesTopSellers());
   }, []);
 
   return (

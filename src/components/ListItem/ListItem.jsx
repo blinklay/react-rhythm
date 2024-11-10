@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "./ListItem.module.css";
-export default function ListItem({ price, name, img }) {
+export default function ListItem({ id, price, name, img }) {
   return (
     <li className={styled.item}>
-      <Link>
+      <Link to={`/catalog/${id}`}>
         <div className={styled.image}>
           <img src={img} alt="product image" />
         </div>
