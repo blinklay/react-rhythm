@@ -6,11 +6,13 @@ import {
   setCatigoriesNewOnBoard,
   setCatigoriesTopSellers,
 } from "../../actions/setCatigories";
+import { topSellersSelect } from "../../selectors/topSellersSelect";
+import { newOnBoardSelect } from "../../selectors/newOnBoardSelect";
 export default function CheckSection() {
   const dispatch = useDispatch();
 
-  const newOnBoard = useSelector((state) => state.catigories.newOnBoard);
-  const topSelling = useSelector((state) => state.catigories.topSellers);
+  const newOnBoard = useSelector(newOnBoardSelect);
+  const topSelling = useSelector(topSellersSelect);
 
   const isLoading = {
     newOnBoard: newOnBoard.length === 0,
@@ -33,11 +35,13 @@ export default function CheckSection() {
           text="NEW ON THE BOARD"
           products={newOnBoard}
           isLoading={isLoading.newOnBoard}
+          to="/collections/new-on-board"
         />
         <SmallCollectionList
           text="TOP SELLING"
           products={topSelling}
           isLoading={isLoading.topSelling}
+          to="/collections/top-sellers"
         />
       </div>
     </section>

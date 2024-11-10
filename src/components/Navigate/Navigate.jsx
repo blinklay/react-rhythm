@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "./Navigate.module.css";
 export default function Navigate() {
   return (
     <nav className={styled.navigate}>
       <ul className={styled.list}>
         <li className={styled.item}>
-          <Link to={"/catalog"}>Store</Link>
+          <NavLink to={"/catalog"}>Store</NavLink>
         </li>
         <li className={styled.item}>
-          <Link to={"/store"}>Collections</Link>
+          <NavLink to={"/collections"}>Collections</NavLink>
         </li>
         <li className={styled.item}>
-          <Link to={"/store"}>Support</Link>
+          <NavLink to={"/support"}>Support</NavLink>
         </li>
       </ul>
     </nav>

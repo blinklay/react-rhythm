@@ -1,0 +1,32 @@
+.header {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: var(--color-text-header);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-background);
+  left: 50%;
+  transform: translateX(-50%);
+}
